@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashionista | Trendy Fashion & Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Fashionista</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Cart <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover Your Style</h1>
+            <p>Shop the latest fashion trends and exclusive designs.</p>
+            <a href="#shop" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="featured">
+        <h2>Featured Collections</h2>
+        <div class="collection-grid">
+            <div class="collection-item">
+                <img src="collection1.jpg" alt="Summer Collection">
+                <h3>Summer Vibes</h3>
+                <p>Embrace the heat with our Summer Collection.</p>
+            </div>
+            <div class="collection-item">
+                <img src="collection2.jpg" alt="Winter Collection">
+                <h3>Winter Elegance</h3>
+                <p>Chic and cozy styles for the cold season.</p>
+            </div>
+            <div class="collection-item">
+                <img src="collection3.jpg" alt="Accessories">
+                <h3>Accessories</h3>
+                <p>Complete your look with stunning accessories.</p>
+            </div>
+        </div>
+    </section>
+<section class="shop" id="shop">
+    <h2>Shop Now</h2>
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="item1.jpg" alt="Product 1">
+            <h3 class="product-name">Trendy Jacket</h3>
+            <p class="product-price">$120.00</p>
+            <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
+            <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="item2.jpg" alt="Product 2">
+            <h3 class="product-name">Casual Dress</h3>
+            <p class="product-price">$80.00</p>
+            <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
+            <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="item3.jpg" alt="Product 3">
+            <h3 class="product-name">Stylish Sneakers</h3>
+            <p class="product-price">$150.00</p>
+            <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
+            <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
+        </div>
+    </div>
+</section>
+
+<section class="cart-section">
+    <h2>Your Cart</h2>
+    <p>Total items: <span id="cart-count-display">0</span></p>
+    <button class="payment-btn" onclick="proceedToPayment()">Proceed to Payment</button>
+</section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Fashionista. Trend-setting designs for everyone.</p>
+            <div class="social-media">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
