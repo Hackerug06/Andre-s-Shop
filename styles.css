@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.featured {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.collection-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.collection-item {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.shop {
+    padding: 50px;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+}
+.product-item button {
+    background-color: #007bff; /* Blue color for Add to Cart */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn {
+    background-color: #007bff; /* Blue color for Add to Cart */
+}
+
+.remove-btn {
+    background-color: #dc3545; /* Red color for Remove from Cart */
+}
+
+.product-item button:hover {
+    background-color: #0056b3; /* Darker blue on hover for Add to Cart */
+}
+
+.remove-btn:hover {
+    background-color: #c82333; /* Darker red on hover for Remove from Cart */
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.cart-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.payment-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.payment-btn:hover {
+    background-color: #218838;
+}
