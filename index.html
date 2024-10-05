@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andre's Fashion Store | Trendy Fashion & Design</title>
+    <title>ANDRE'S FASHION STORE</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,83 +15,77 @@
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
-                <li><a href="#">Collections</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Cart <span id="cart-count">0</span></a></li>
             </ul>
         </nav>
     </header>
-    <section class="cart-section">
-    <h2>Your Cart</h2>
-    <p>Total items: <span id="cart-count-display">0</span></p>
-    <button class="payment-btn" onclick="proceedToPayment()">Proceed to Payment</button>
-</section>
-
-<a href="#shop" class="cta-button">Shop Now</a></br>
         </div>
     </section>
-
     <section class="featured">
         <h2>Featured Collections</h2>
         <div class="collection-grid">
             <div class="collection-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4ayeUk-knjMOsynrR2ZqiFBZ8y2AGllZ1DA&s.jpg" width="200px" height="200px" alt="Summer Collection">
+                <img src="collection1.jpg" alt="Summer Collection">
                 <h3>Summer Vibes</h3>
                 <p>Embrace the heat with our Summer Collection.</p>
             </div>
             <div class="collection-item">
-                <img src="https://elegantlivingeveryday.com/wp-content/uploads/2024/01/Winter-Fashion-Featured-Image.jpg" width="200px" height="200px" alt="Winter Collection">
+                <img src="collection2.jpg" alt="Winter Collection">
                 <h3>Winter Elegance</h3>
                 <p>Chic and cozy styles for the cold season.</p>
             </div>
             <div class="collection-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2YhXNZGVCMRv_KMED3aM2z0uOEejHkSRfA&s.jpg" alt="Accessories">
+                <img src="collection3.jpg" alt="Accessories">
                 <h3>Accessories</h3>
                 <p>Complete your look with stunning accessories.</p>
             </div>
         </div>
     </section>
-<section class="shop" id="shop">
+
+    <section class="shop" id="shop">
     <h2>Shop Now</h2>
     <div class="product-grid">
         <div class="product-item">
-            <img src="https://cdn-images.farfetch-contents.com/19/32/14/39/19321439_44324857_1000.jpg"width="200px" height="200px" alt="Product 1">
+            <img src="item1.jpg" alt="Product 1">
             <h3 class="product-name">Trendy Jacket</h3>
-            <p class="product-price">UGX:25,000</p>
+            <p class="product-price">$120.00</p>
             <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
             <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
         </div>
         <div class="product-item">
-            <img src="https://i.ebayimg.com/images/g/sQsAAOSww~1kQo8L/s-l1600.webp" width="200px" height="200px" alt="Product 2">
+            <img src="item2.jpg" alt="Product 2">
             <h3 class="product-name">Casual Dress</h3>
-            <p class="product-price">UGX:60,000</p>
+            <p class="product-price">$80.00</p>
             <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
             <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
         </div>
         <div class="product-item">
-            <img src="https://ug.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/19/971489/1.jpg?3063"width="200px"height="200px" alt="Product 3">
+            <img src="item3.jpg" alt="Product 3">
             <h3 class="product-name">Stylish Sneakers</h3>
-            <p class="product-price">UGX:50,000</p>
+            <p class="product-price">$150.00</p>
             <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
             <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
         </div>
     </div>
 </section>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Andre-s Fashion Store. Trend-setting designs for everyone.</p>
-            <div class="social-media">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwQ_g5h_513q_PfLNDi3z7Yrl0LRU4O4JNvA&s" width="20px" height="15px">
-                <a href="https://www.instagram.com/hackerug06/">Instagram</a>
-                <img src="https://img.freepik.com/premium-vector/facebook-3d-vector-logo_1072236-11.jpg"width="20px" height="15px">
-                <a href="#">Facebook</a>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI-h-e2hgz8mwGfCt4gvj4IgMG_wAUolVM6w&s"width="20px"height="15px">
-                <a href="#">Twitter</a>
-            </div>
-        </div>
-    </footer>
+<section class="cart-section">
+    <h2>Your Cart</h2>
+    <p>Total items: <span id="cart-count-display">0</span></p>
+    <button class="payment-btn" onclick="proceedToPayment()">Proceed to Payment</button>
+</section>
 
     <script src="scripts.js"></script>
 </body>
 </html>
+ <footer>
+        <div class="footer-content">
+            <p>&copy; ANDRE'S FASHION STPORE. Trend-setting designs for everyone.</p>
+            <div class="social-media">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
