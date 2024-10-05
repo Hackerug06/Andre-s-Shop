@@ -45,9 +45,10 @@ function proceedToPayment() {
         const encodedMessage = encodeURIComponent(message);
 
         // Redirect to WhatsApp with the message
-        const url = `https://wa.me/256761399903?text=${encodedMessage}`;
+        const url = `https://wa.me/2567611399903?text=${encodedMessage}`;
         window.open(url, '_blank');
     } else {
         alert('Your cart is empty!');
     }
 }
+
