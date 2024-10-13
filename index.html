@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANDRE'S FASHION STORE</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>ND FASHION STORE</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">ANDRE'S FASHION STORE</div>
+            <div class="logo">ND FASHION STORE</div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Cart <span id="cart-count">0</span></a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Cart <span id="cart-count">0</span></a></li>
             </ul>
         </nav>
+        
     </header>
         </div>
     </section>
-    <section class="featured">
-        <h2>Featured Collections</h2>
+    <section class="cart-section">
+        <h2>Your Cart</h2>
+        <p>Total items: <span id="cart-count-display">0</span></p>
+        <button class="payment-btn" onclick="proceedToPayment()">Proceed to Payment</button>
+    </section>
+    <section class="home" id="home">
+        <div class="featured"><h2>Featured Collections</h2></div>
         <div class="collection-grid">
             <div class="collection-item">
-                <img src="summer2.jpg"height="200px" width="200px" alt="Summer Collection">
+                <img src="file:///C:/Users/hp/Downloads/summer2.jpg"height="200px" width="200px" alt="Summer Collection">
                 <h3>Summer Vibes</h3>
                 <p>Embrace the heat with our Summer Collection.</p>
             </div>
             <div class="collection-item">
-                <img src="winter elegence.jpg" height="200px" width="200px" alt="Winter Collection">
+                <img src="file:///C:/Users/hp/Downloads/winter%20elegence.jpg" height="200px" width="200px" alt="Winter Collection">
                 <h3>Winter Elegance</h3>
                 <p>Chic and cozy styles for the cold season.</p>
             </div>
             <div class="collection-item">
-                <img src="rainy elegence.jpg" height="200px" width="200px"alt="Rain">
+                <img src="file:///C:/Users/hp/Downloads/rainy%20elegence.jpg" height="200px" width="200px"alt="Rain">
                 <h3>Rain Vibes</h3>
                 <p>Complete your look with stunning rain clothes.</p>
             </div>
@@ -48,44 +51,153 @@
     <h2>Shop Now</h2>
     <div class="product-grid">
         <div class="product-item">
-            <img src="trendy jacket.jpg" height="200px" width="200px" alt="Product 1">
-            <h3 class="product-name">Trendy Jacket</h3>
+            <img src="file:///C:/Users/hp/Downloads/black%20trendy%20jacket.jpg" height="200px" width="200px" alt="Product 1">
+            <h3 class="product-name">Black Trendy Jacket</h3>
             <p class="product-price">Ugx: 50,000</p>
             <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
             <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
         </div>
         <div class="product-item">
-            <img src="casual dress.jpg" height="200px" width="200px" alt="Product 2">
-            <h3 class="product-name">Casual Dress</h3>
+            <img src="file:///C:/Users/hp/Downloads/caribbean%20tshirt.jpg" height="200px" width="200px" alt="Product 2">
+            <h3 class="product-name">White Caribbean T-shirt</h3>
+            <p class="product-price">Ugx: 35,000</p>
+            <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
+            <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="file:///C:/Users/hp/Downloads/blue%20crocs.jpg" height="200px" width="200px" alt="Product 3">
+            <h3 class="product-name">Blue Crocs</h3>
+            <p class="product-price">Ugx: 20,000</p>
+            <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
+            <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
+        </div>
+    </section>
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="file:///C:/Users/hp/Downloads/black%20track%20trouser.jpg" height="200px" width="200px" alt="Product 1">
+            <h3 class="product-name">Black Track Trouser</h3>
+            <p class="product-price">Ugx: 45,000</p>
+            <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
+            <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="file:///C:/Users/hp/Downloads/gray%20trouser.jpg" height="200px" width="200px" alt="Product 2">
+            <h3 class="product-name">Gray Trouser</h3>
+            <p class="product-price">50,000</p>
+            <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
+            <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="file:///C:/Users/hp/Downloads/green%20trendy%20jacket.jpg" height="200px" width="200px" alt="Product 3">
+            <h3 class="product-name">Black Trendy Jacket</h3>
+            <p class="product-price">Ugx: 55,000</p>
+            <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
+            <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
+        </div>
+    </section>
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="file:///C:/Users/hp/Pictures/black%20leather%20bag.jpg" height="200px" width="200px" alt="Product 1">
+            <h3 class="product-name">Black Leather Bag</h3>
+            <p class="product-price">Ugx: 25,000</p>
+            <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
+            <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="file:///C:/Users/hp/Pictures/ladies%20sweater.jpg" height="200px" width="200px" alt="Product 2">
+            <h3 class="product-name">Ladies sweater</h3>
+            <p class="product-price">Ugx: 30,000</p>
+            <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
+            <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="file:///C:/Users/hp/Pictures/african%20gentle%20shirt.jpg" width="200px" height="200px" alt="Product 3">
+            <h3 class="product-name">African Black Gentle Shirt</h3>
+            <p class="product-price">Ugx:35,000</p>
+            <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
+            <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
+        </div>
+    </section>
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="file:///C:/Users/hp/Pictures/black%20mini%20skirt.jpg" height="200px" width="200px" alt="Product 1">
+            <h3 class="product-name">Black Mini Skirt</h3>
+            <p class="product-price">Ugx: 33,000</p>
+            <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
+            <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="file:///C:/Users/hp/Pictures/nike%20air%20force%201%20shoes%20blue.jpg" height="200px" width="200px" alt="Product 2">
+            <h3 class="product-name"> Blue Nike Air Force1 Shoes</h3>
+            <p class="product-price">Ugx: 55,000</p>
+            <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
+            <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="file:///C:/Users/hp/Pictures/crocs.jpg" width="200px" height="200px" alt="Product 3">
+            <h3 class="product-name">Crocs</h3>
+            <p class="product-price">Ugx: 20,000</p>
+            <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
+            <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="file:///C:/Users/hp/Pictures/nike-air-force1%20shoes.jpg" height="200px" width="200px" alt="Product 1">
+            <h3 class="product-name">Nike Air Force1 Shoes</h3>
+            <p class="product-price">Ugx: 60,000</p>
+            <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
+            <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
+        </div>
+        <div class="product-item">
+            <img src="file:///C:/Users/hp/Pictures/black-red%20shirt.jpg" height="200px" width="200px" alt="Product 2">
+            <h3 class="product-name">Black-Red Gentle Shirt</h3>
             <p class="product-price">40,000</p>
             <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
             <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
         </div>
         <div class="product-item">
-            <img src="item3.jpg" alt="Product 3">
-            <h3 class="product-name">Stylish Sneakers</h3>
-            <p class="product-price">$150.00</p>
+            <img src="file:///C:/Users/hp/Pictures/gentle%20trouser.jpeg" width="200px" height="200px" alt="Product 3">
+            <h3 class="product-name">Grayish Gentle Trouser</h3>
+            <p class="product-price">Ugx: 55,000</p>
             <button class="add-btn" onclick="addToCart(this)">Add to Cart</button>
             <button class="remove-btn" onclick="removeFromCart(this)" style="display: none;">Remove from Cart</button>
         </div>
-    </div>
-</section>
-<section class="cart-section">
-    <h2>Your Cart</h2>
-    <p>Total items: <span id="cart-count-display">0</span></p>
-    <button class="payment-btn" onclick="proceedToPayment()">Proceed to Payment</button>
-</section>
-
-    <script src="scripts.js"></script>
-</body>
-</html>
- <footer>
-        <div class="footer-content">
-            <p>&copy; ANDRE'S FASHION STORE. Trend-setting designs for everyone.</p>
-            <div class="social-media">
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
+        <h2>Shoe Cleaning & Repair</h2>
+        <p>Apart from our Fashion store we have also clean shoes and repair them, these include tone shoes, those that have run spoilt. Just bring them to us the Mister Fixer.</p>
+        <div class="product-item">
+            <img src="file:///C:/Users/hp/Downloads/cleaning%20shoes2.jpg" height="200px" width="300px" alt="Product 1">
             </div>
+        <div class="product-item">
+            <img src="file:///C:/Users/hp/Downloads/cleaning.jpeg" height="200px" width="300px" alt="Product 2">
+            </div>
+        <div class="product-item">
+            <img src="file:///C:/Users/hp/Downloads/cleaning%20shoes1.jpg" width="300px" height="200px" alt="Product 3">
+            </div>
+    </section>
+        <section class="about" id="about">
+            <h2>ABOUT</h2>
+            <p>Welcome to <b>ND Fashion Store</b>, where style meets sophistication. We are a Ugandan-based fashion brand committed to providing the latest trends and timeless pieces to fashion enthusiasts. Our collections are thoughtfully curated to suit diverse tastes, whether you're looking for casual, formal, or occasion-specific outfits.
+            <br>We are passionate about sustainability and ethical fashion practices. Many of our pieces are locally sourced and handmade by skilled artisans, supporting our community and promoting Ugandan craftsmanship.<br>
+        Explore  our collections and discover fashion that complements your lifestyle.</p>
+        <p>Thank you for choosing <b>ND Fashion Store</b>.</p>
+</section>
+<br><br>
+<section class="contact" id="contact">
+   <div class="contact"><h2>Contact Us:</h2>
+    <p><b>Address:</b> Kampala, Kyanja</p>
+    <p><b>contact:</b></p>
+    <p>+256708801462</p>
+    <p>+256761011771</p>
+    <a href="whatsapp"><b>Whatsapp Me</b></a>
+    <p><b>Email:</b> andrewmuwumuza95@gmail.com</p>
+</div>
+</section>
+</body>
+<footer>
+    <div class="footer-content">
+        <p>&copy; ND FASHION STORE. Trend-setting designs for everyone.</p>
         </div>
-    </footer>
+    </div>
+</footer>
+
+</html>
+ 
