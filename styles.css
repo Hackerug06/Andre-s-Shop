@@ -165,3 +165,72 @@ footer {
 .contact {
     margin-right:auto;
 }
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size:14px;
+    }
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        width: 80%;
+    }
+    .menu {
+        display: none;
+    }
+    .hero {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+    .products {
+        grid-template-columns: repeat (2, 1fr);
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+    
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* For tablets */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    body { 
+        font-size: 16px;
+    }
+    .nav-bar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 50%;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+    .hero {
+        padding: 40px;
+        font-size: 1.5rem;
+    }
+    .products {
+        grid-template-columns: repeat (2, 1fr);
+    }
+    .footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
