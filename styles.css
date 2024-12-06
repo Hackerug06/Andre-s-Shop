@@ -18,10 +18,10 @@ body {
     color: #fff;
 }
  footer {
-     background-color: var(--dark-color);
+     background-color: #333;
      color: #fff;
      text-align: center;
-     padding: 1rem;
+     padding: 10px 20px;
      margin-top: 1rem;
      width: 100%;
 }
